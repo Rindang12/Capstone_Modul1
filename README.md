@@ -5,9 +5,9 @@ Python Fundamental_Modul 1_Purwadhika Project
 📖 Deskripsi
 Program ini merupakan sistem manajemen perpustakaan berbasis Python yang memungkinkan pengguna untuk:
 - Melihat daftar buku berdasarkan kategori atau judul
-- Menambahkan buku ke dalam wishlist
+- Menambahkan buku ke dalam wishlist 
 - Meminjam dan mengembalikan buku
-- Mengelola koleksi buku (hanya untuk admin)
+- Mengelola koleksi buku 
 - Menghapus serta mengembalikan buku yang telah dihapus dari recycle bin
 
 Program ini memiliki dua mode akses: **Admin** dan **Pengunjung**.
@@ -64,3 +64,18 @@ Jika ada pertanyaan atau masalah, silakan hubungi pengembang.
 **Selamat menggunakan sistem perpustakaan ini! 📚✨**
 
 ![alt text](FlowchartLoginSistem.png)
+![alt text](FlowchartMenuUtama.png)
+![alt text](FlowchartTambahBuku.png)
+![alt text](FlowchartHapusBuku.png)
+![alt text](FlowchartLihatDaftarBuku.png)
+![alt text](FlowchartPinjamBuku.png)
+![alt text](FlowchartKembalikanBuku.png)
+![alt text](FlowchartDaftarPeminjam.png)
+![alt text](FlowchartMemulihkanBuku.png)
+![alt text](FlowchartMenuPengunjung.png)
+![alt text](FlowchartMenuWishlist.png)
+![alt text](FlowchartTambahBukukeWishlist.png)
+![alt text](FlowchartHapusBukudiWishlist.png)
+![alt text](FlowchartLihatWishlist.png)
+![alt text](FlowchartSortingBuku.png)
+![alt text](FlowchartCekWishlistSetelahPengembalian.png)
