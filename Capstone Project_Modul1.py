@@ -225,7 +225,7 @@ def menu_wishlist():
         elif pilihan == "3":
             hapus_dari_wishlist(nama_peminjam)
         elif pilihan == "4":
-            return  # Untuk kembali ke menu pengunjung
+            menu_pengunjung()
         else:
             print("\nPilihan tidak valid! Silakan coba lagi.")
       
