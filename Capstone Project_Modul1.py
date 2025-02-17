@@ -378,7 +378,7 @@ def lihat_daftar_buku():
 
             if data_buku:
                 print("\nDaftar semua buku di perpustakaan (A-Z per kategori):")
-                print(tabulate(data_buku, headers=["Kategori", "ID", "Judul", "Tahun", "Pengarang", "Penerbit", "Stok"], tablefmt="pretty"))
+                print(tabulate(data_buku, headers=["Kategori", "ID", "Judul", "Tahun", "Pengarang", "Penerbit", "Stok"], tablefmt="pretty", maxcolwidths=[None, None, 40, None, None, None, None]))
             else:
                 print("Tidak ada buku yang tersedia.")
 
