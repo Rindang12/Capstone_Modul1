@@ -292,7 +292,7 @@ def hapus_dari_wishlist(nama_peminjam):
                 pilihan_index = sorted(set(int(x) - 1 for x in pilihan.split(",")), reverse=True)
 
                 if any(i < 0 or i >= len(wishlist_buku[nama_peminjam]) for i in pilihan_index):
-                    raise IndexError  # Pastikan indeks valid
+                    raise IndexError  #Memastikan indeks valid
                 
                 buku_dihapus = [wishlist_buku[nama_peminjam][i] for i in pilihan_index]
 
@@ -363,7 +363,7 @@ def lihat_daftar_buku():
                     # Mengurutkan buku dalam kategori
                     daftar_terurut = bubble_sort_buku(koleksi_buku[kategori_terpilih])  
                     data_buku = [[buku["id"], buku["judul"], buku["tahun"], buku["pengarang"], buku["penerbit"], buku["stok"]] for buku in daftar_terurut]
-                    print(f"\n\U0001F4C2 Daftar buku dalam kategori '{kategori_terpilih}' (A-Z):")
+                    print(f"\nDaftar buku dalam kategori '{kategori_terpilih}' (A-Z):")
                     print(tabulate(data_buku, headers=["ID", "Judul", "Tahun", "Pengarang", "Penerbit", "Stok"], tablefmt="fancy_grid"))
                     break  
                 else:
@@ -388,7 +388,7 @@ def lihat_daftar_buku():
 
         # Konfirmasi sebelum kembali ke menu utama
         while True:
-            lanjut = input("\n\U0001F504 Apakah ingin melihat daftar buku lagi? (ya/tidak): ").strip().lower()
+            lanjut = input("\nApakah ingin melihat daftar buku lagi? (ya/tidak): ").strip().lower()
             if lanjut == "ya":
                 break  
             elif lanjut == "tidak":
@@ -476,7 +476,6 @@ def hapus_buku():
 
 # Fungsi untuk peminjaman buku
 def pinjam_buku():
-    """Proses peminjaman buku oleh pengguna."""
     while True:
         print("\nPeminjaman Buku")
         nama_peminjam = input("Masukkan nama peminjam: ").strip()
