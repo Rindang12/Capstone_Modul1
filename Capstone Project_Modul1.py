@@ -126,9 +126,6 @@ koleksi_buku = {
     ],
 }
 
-# Bersihkan data dari spasi/tab berlebih agar tabulate rapih
-books = [[str(cell).strip() for cell in row] for row in koleksi_buku]
-headers = ["Kategori", "Stok", "ID", "Judul", "Tahun", "Pengarang", "Penerbit"]
 
 # Data peminjam dalam bentuk list of dictionaries
 daftar_peminjam = [
